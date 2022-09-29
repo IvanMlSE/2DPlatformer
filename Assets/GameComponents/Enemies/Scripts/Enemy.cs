@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
     {
         if (collision.collider.TryGetComponent(out Player player))
         {
-            Debug.Log(true);
             player.Spawn();
         }
     }
